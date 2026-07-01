@@ -28,6 +28,22 @@ ollama pull qwen2.5:7b
 python example_chat.py     # tell it facts, quit, run again, ask about them
 ```
 
+### It really persists across restarts (real run)
+
+```text
+# session 1 — brand-new memory.db
+you> My cat is named Ada and my favorite language is Rust.
+bot> Nice to meet you! A cat named Ada and you enjoy Rust — I'll keep that in mind.
+
+# session 2 — a SEPARATE process, same memory.db
+sqlite-memory chat — 2 memories on disk.
+you> What is my cat's name?
+bot> Your cat's name is Ada! 😊
+```
+
+> In session 2 the model was never told the name — it was recalled from the
+> `.db` file via semantic search and injected into the prompt.
+
 ## API
 
 ```python
