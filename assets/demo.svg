@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 372" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="820" height="372" rx="12" fill="#0d1117"/>
+  <rect width="820" height="40" rx="12" fill="#161b22"/>
+  <rect y="28" width="820" height="12" fill="#161b22"/>
+  <circle cx="26" cy="20" r="6" fill="#ff5f56"/>
+  <circle cx="48" cy="20" r="6" fill="#ffbd2e"/>
+  <circle cx="70" cy="20" r="6" fill="#27c93f"/>
+  <text x="410" y="25" fill="#8b949e" font-size="13" text-anchor="middle">sqlite-memory — persistent memory across restarts</text>
+  <g font-size="15">
+    <text x="28" y="80" fill="#6e7681"># session 1 — brand-new memory.db</text>
+    <text x="28" y="112"><tspan fill="#3fb950">you&gt; </tspan><tspan fill="#e6edf3">My cat is named Ada and my favorite language is Rust.</tspan></text>
+    <text x="28" y="140"><tspan fill="#58a6ff">bot&gt; </tspan><tspan fill="#8b949e">Nice to meet you! I'll keep that in mind.</tspan></text>
+    <text x="28" y="196" fill="#6e7681"># session 2 — a SEPARATE process, same memory.db</text>
+    <text x="28" y="224" fill="#6e7681">sqlite-memory chat — 2 memories on disk.</text>
+    <text x="28" y="256"><tspan fill="#3fb950">you&gt; </tspan><tspan fill="#e6edf3">What is my cat's name?</tspan></text>
+    <text x="28" y="284"><tspan fill="#58a6ff">bot&gt; </tspan><tspan fill="#e6edf3" font-weight="bold">Your cat's name is Ada! </tspan><tspan fill="#e6edf3">😊</tspan></text>
+  </g>
+  <rect x="28" y="308" width="764" height="44" rx="8" fill="#161b22" stroke="#d29922" stroke-width="1"/>
+  <text x="44" y="335" font-size="13.5" fill="#d29922">↑ recalled from the .db file via semantic search — the model was never told the name this session</text>
+</svg>

@@ -2,6 +2,8 @@
 
 **Give your local LLM persistent long-term memory — in one Python file. No vector DB, no server, no framework.**
 
+![sqlite-memory: recalling a fact in a brand-new session](assets/demo.svg)
+
 LLMs forget everything the moment a message scrolls out of the context window,
 and everything again when the process restarts. `sqlite-memory` is the smallest
 possible fix: embed each fact or chat turn with a local [Ollama](https://ollama.com)
